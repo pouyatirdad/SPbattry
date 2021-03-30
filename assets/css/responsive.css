@@ -404,7 +404,7 @@
   .login-page-content-area .login-page-wrapper {
     padding: 72px 40px 80px 40px;
   }
-  .login-page-content-area
+  /* .login-page-content-area
     .left-content-area
     .bottom-content
     .right-content
@@ -412,7 +412,7 @@
     li
     a {
     width: 180px;
-  }
+  } */
   .single-promotional-item.left-text.top-100 .img-wrapper {
     height: 525px;
   }
@@ -664,6 +664,7 @@
   }
   .bg-orange.navbar-area .navbar-collapse {
     top: 65px;
+    right: 0;
     background: #f45832;
   }
   .bg-orange.navbar-area
@@ -1274,7 +1275,7 @@
   }
   .login-page-content-area .right-contnet-area {
     padding-left: 0;
-    margin-top: 40px;
+    margin-top: 200px;
   }
   .login-page-content-area .signup-page-wrapper .right-contnet-area {
     padding-left: 80px;
@@ -1597,6 +1598,7 @@
   }
   .bg-orange.navbar-area .navbar-collapse {
     top: 65px;
+    right: 0;
     background: #f45832;
   }
   .bg-orange.navbar-area
@@ -2365,15 +2367,16 @@
   .login-page-content-area .login-page-wrapper:after {
     display: none;
   }
-  .login-page-content-area .login-page-wrapper .left-content-area {
+  /* .login-page-content-area .login-page-wrapper .left-content-area {
     margin-bottom: 30px;
-  }
+  } */
   .login-page-content-area .right-contnet-area {
     padding-right: 0;
+    margin-top: 200px;
   }
-  .login-page-content-area .login-page-wrapper .left-content-area {
+  /* .login-page-content-area .login-page-wrapper .left-content-area {
     padding-left: 0;
-  }
+  } */
   .single-promotional-item.left-text.top-100 .img-wrapper {
     height: 796px;
   }
@@ -2968,10 +2971,10 @@
   .login-page-content-area .login-page-wrapper {
     padding: 72px 40px 80px 40px;
   }
-  .login-page-content-area .left-content-area .bottom-content .left-content {
+  /* .login-page-content-area .left-content-area .bottom-content .left-content {
     position: initial;
     margin-bottom: 20px;
-  }
+  } */
 
   .login-page-content-area .left-content-area .bottom-content .right-content {
     padding-right: 0;
@@ -2983,6 +2986,19 @@
 @media only screen and (max-width: 600px) {
   .single-promotional-item.left-text.top-100 .img-wrapper {
     height: 609px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .login-page-content-area .left-content-area {
+    padding: 0 !important;
+  }
+  .login-page-content-area .left-content-area .bottom-content .right-content {
+    margin-top: 30px;
+    margin-bottom: -115px;
+  }
+  .login-page-content-area .right-contnet-area {
+    padding: 7px;
   }
 }
 @media only screen and (max-width: 500px) {

@@ -499,8 +499,11 @@ body {
 }
 
 .submit-btn {
+  margin-left: auto;
+  margin-right: auto;
   width: 250px;
-  height: 60px;
+  padding: 10px;
+  /* height: 60px; */
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -7546,7 +7549,7 @@ ul {
   text-align: center;
   font-family: "IRANSans";
   font-weight: 700;
-  font-size: 13px;
+  font-size: 24px;
   -ms-transform: translate(-50%, -50%);
   /* IE 9 */
   -webkit-transform: translate(-50%, -50%);
@@ -7658,14 +7661,20 @@ ul {
   padding-left: 80px;
 }
 .login-page-content-area .left-content-area .bottom-content {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
+  margin-top: -25px;
 }
 .login-page-content-area .left-content-area .bottom-content .left-content {
   min-height: 120px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  /* position: absolute; */
+  margin-left: auto;
+  margin-right: auto;
+  right: 130px;
+  top: -38px;
 }
 .login-page-content-area
   .left-content-area
@@ -7679,7 +7688,12 @@ ul {
   box-shadow: 0 0 25px 0 rgba(42, 156, 245, 0.5);
 }
 .login-page-content-area .left-content-area .bottom-content .right-content {
-  padding-right: 150px;
+  /* position: absolute;  */
+  top: 111px;
+  margin-right: auto;
+  margin-left: auto;
+  right: 82px;
+  margin-top: 5px;
 }
 .login-page-content-area
   .left-content-area
@@ -7920,7 +7934,7 @@ ul {
   z-index: 0;
 }
 .signup-page-wrapper .left-content-area.signup-bg {
-  background-image: url(../img/signup.jpg);
+  background-image: url(../../pic/bgmainpage33.jpg);
   background-position: top;
   background-size: cover;
 }
@@ -7979,7 +7993,7 @@ ul {
   text-align: center;
   font-family: "IRANSans";
   font-weight: 700;
-  font-size: 13px;
+  font-size: 24px;
   -ms-transform: translate(-50%, -50%);
   /* IE 9 */
   -webkit-transform: translate(-50%, -50%);

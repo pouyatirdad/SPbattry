@@ -1,44 +1,44 @@
 (function ($) {
-	"use strict";
-    jQuery(document).ready(function($){
-        
+    "use strict";
+    jQuery(document).ready(function ($) {
+
         /*----------------------
             Side bar
         -----------------------*/
-        var sideSidebarArea =  $('#slide-sidebar-area');
-        var bodyOvrelay =  $('#body-overlay');
-        var cartSidebarArea =  $('#cart-sidebar-area');
+        var sideSidebarArea = $('#slide-sidebar-area');
+        var bodyOvrelay = $('#body-overlay');
+        var cartSidebarArea = $('#cart-sidebar-area');
         var searchPopup = $('#search-popup');
 
-        $(document).on('click','#side-menu',function(e){
+        $(document).on('click', '#side-menu', function (e) {
             e.preventDefault();
             sideSidebarArea.addClass('active');
-           bodyOvrelay.addClass('active');
+            bodyOvrelay.addClass('active');
         });
-        $(document).on('click','.side-sidebar-close-btn',function(e){
+        $(document).on('click', '.side-sidebar-close-btn', function (e) {
             e.preventDefault();
             sideSidebarArea.removeClass('active');
-           bodyOvrelay.removeClass('active');
-           cartSidebarArea.removeClass('active');
+            bodyOvrelay.removeClass('active');
+            cartSidebarArea.removeClass('active');
         });
-        $(document).on('click','#cart',function(e){
+        $(document).on('click', '#cart', function (e) {
             e.preventDefault();
-           cartSidebarArea.addClass('active');
-           bodyOvrelay.addClass('active');
+            cartSidebarArea.addClass('active');
+            bodyOvrelay.addClass('active');
         });
-        $(document).on('click','#body-overlay',function(e){
+        $(document).on('click', '#body-overlay', function (e) {
             e.preventDefault();
             sideSidebarArea.removeClass('active');
-           bodyOvrelay.removeClass('active');
+            bodyOvrelay.removeClass('active');
             searchPopup.removeClass('active');
-           cartSidebarArea.removeClass('active');
+            cartSidebarArea.removeClass('active');
         });
-        $(document).on('click','#search',function(e){
+        $(document).on('click', '#search', function (e) {
             e.preventDefault();
             searchPopup.addClass('active');
-           bodyOvrelay.addClass('active');
+            bodyOvrelay.addClass('active');
         });
-        $(document).on('click','.remove-cart',function(e){
+        $(document).on('click', '.remove-cart', function (e) {
             e.preventDefault();
             $(this).parent().parent().hide(1000);
         });
@@ -72,12 +72,12 @@
         var counternumber = $('.count');
         counternumber.counterUp({
             delay: 20,
-            time: 5000 
+            time: 5000
         });
         /*-------------------------------
             sellers products close btn
         --------------------------------*/
-        $(document).on('click','.sp-close-btn',function(e){
+        $(document).on('click', '.sp-close-btn', function (e) {
             var el = $(this);
             e.preventDefault();
             el.parent().parent().parent().hide(1000);
@@ -86,16 +86,16 @@
         /*-----------------------------
             Cart Page Quantity 
         -----------------------------*/
-        $(document).on('click','.qtminus',function(){
+        $(document).on('click', '.qtminus', function () {
             var el = $(this);
             var $tselector = el.parent().find('.qttotal').selector;
             var total = $($tselector).text();
-            if( total >= 1 ){
+            if (total >= 1) {
                 total--;
             }
             $($tselector).text(total);
         });
-        $(document).on('click','.qtplus',function(){
+        $(document).on('click', '.qtplus', function () {
             var el = $(this);
             var $tselector = el.parent().find('.qttotal').selector;
             var total = $($tselector).text();
@@ -106,7 +106,7 @@
         /*-------------------------------
             Remove Item From Cart table
         -------------------------------*/
-        $(document).on('click','.cart-remove-item',function(){
+        $(document).on('click', '.cart-remove-item', function () {
             var el = $(this);
             el.parent().parent().parent().hide(1000);
         });
@@ -131,8 +131,8 @@
                 items: 4
             }
         };
-        owlCarsouelActivate('#recently-added-carousel',true,recentlyaddedResponsive);
-        
+        owlCarsouelActivate('#recently-added-carousel', true, recentlyaddedResponsive);
+
         /*---------------------------
             Product Details carousel
         ---------------------------*/
@@ -154,8 +154,8 @@
             }
         };
 
-        owlCarsouelActivate('#product-details-slider',false,productResponsive,true,true);
-       
+        owlCarsouelActivate('#product-details-slider', false, productResponsive, true, true);
+
         /*---------------------------
             Team Member carousel
         ---------------------------*/
@@ -176,8 +176,8 @@
                 items: 3
             }
         };
-        owlCarsouelActivate('#team-carousel',false,teamResponsive);
-        
+        owlCarsouelActivate('#team-carousel', false, teamResponsive);
+
 
         /*---------------------------
             testimonial carousel
@@ -199,8 +199,8 @@
                 items: 3
             }
         };
-        owlCarsouelActivate('#testimonial-carousel',false,testimonialRespnosive);
-       
+        owlCarsouelActivate('#testimonial-carousel', false, testimonialRespnosive);
+
         /*---------------------------
             brand carousel one
         ---------------------------*/
@@ -208,8 +208,8 @@
             0: {
                 items: 1
             },
-            414:{
-                items:1,
+            414: {
+                items: 1,
             },
             768: {
                 items: 3
@@ -224,24 +224,24 @@
                 items: 5
             }
         }
-        owlCarsouelActivate('#brand-logo-carousel-one',false,brandResponsive);
-       
+        owlCarsouelActivate('#brand-logo-carousel-one', false, brandResponsive);
 
-       /*---------------------------
-           Dropipy 
-        ---------------------------*/
+
+        /*---------------------------
+            Dropipy 
+         ---------------------------*/
         var $dropify = $('.dropify');
-        if($dropify.length > 0){
-                $dropify.dropify();
+        if ($dropify.length > 0) {
+            $dropify.dropify();
         }
-       /*---------------------------
-           Data table 
-        ---------------------------*/
+        /*---------------------------
+            Data table 
+         ---------------------------*/
         var $dataTable = $('#datatableOne');
-        if($dataTable.length > 0){
+        if ($dataTable.length > 0) {
             $('#datatableOne').DataTable({
                 paging: false,
-                searching:false
+                searching: false
             });
         }
         /*---------------------------------
@@ -273,175 +273,175 @@
             $(this).addClass('active');
         });
 
-       /*------------------------
-            Add To Cart Animation
-       ------------------------*/
-       $(document).on('click','.addtocart', function (e) {
-           e.preventDefault();
-        var cart = $('#cart');
-        var imgtodrag = $(this).parent().parent().find("img").eq(0);
+        /*------------------------
+             Add To Cart Animation
+        ------------------------*/
+        $(document).on('click', '.addtocart', function (e) {
+            e.preventDefault();
+            var cart = $('#cart');
+            var imgtodrag = $(this).parent().parent().find("img").eq(0);
             // console.log(imgtodrag);
-                if (imgtodrag) {
-                    var imgclone = imgtodrag.clone()
-                        .offset({
+            if (imgtodrag) {
+                var imgclone = imgtodrag.clone()
+                    .offset({
                         top: imgtodrag.offset().top,
                         left: imgtodrag.offset().left
                     })
-                        .css({
+                    .css({
                         'opacity': '0.5',
-                            'position': 'absolute',
-                            'height': '150px',
-                            'width': '150px',
-                            'z-index': '100'
+                        'position': 'absolute',
+                        'height': '150px',
+                        'width': '150px',
+                        'z-index': '100'
                     })
-                        .appendTo($('body'))
-                        .animate({
+                    .appendTo($('body'))
+                    .animate({
                         'top': cart.offset().top + 10,
-                            'left': cart.offset().left + 10,
-                            'width': 75,
-                            'height': 75
+                        'left': cart.offset().left + 10,
+                        'width': 75,
+                        'height': 75
                     }, 1000);
-                    
-                    setTimeout(function () {
-                        cart.removeClass("shake");
-                        cart.addClass("shake");
-                    }, 1000);
-                    setTimeout(function () {
-                        cart.removeClass("shake");
-                    }, 1800);
 
-                    imgclone.animate({
-                        'width': 0,
-                            'height': 0
-                    }, function () {
-                        $(this).detach()
-                    });
-                }
-            });
+                setTimeout(function () {
+                    cart.removeClass("shake");
+                    cart.addClass("shake");
+                }, 1000);
+                setTimeout(function () {
+                    cart.removeClass("shake");
+                }, 1800);
 
-
-            //owl carousel activate function 
-
-            function owlCarsouelActivate(selector,nav,responsive,thumbs=false,thumbsPrerendered=false,loop = true,autoplay=true,margin=30,dot=false){
-                var $selector = $(selector);
-                if ($selector.length > 0) {
-                    $selector.owlCarousel({
-                        loop: loop,
-                        autoplay: autoplay, //true if you want enable autoplay
-                        autoPlayTimeout: 1000,
-                        margin: margin,
-                        dots: dot,
-                        nav: nav,
-                        thumbs: thumbs,
-                        navText: ['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
-                        thumbsPrerendered: thumbsPrerendered,
-                        responsive: responsive
-                    });
-                }
+                imgclone.animate({
+                    'width': 0,
+                    'height': 0
+                }, function () {
+                    $(this).detach()
+                });
             }
-            /**-------------------------------
-             * Contact Js
-             * -----------------------------**/
-            $(document).on('submit', '#get_in_touch', function (e) {
-                e.preventDefault();
-                //element id
-                var formID = $('#get_in_touch');
-                var first_nameID = $('#first_name');
-                var last_nameID = $('#last_name');
-                var subjectID = $('#subject');
-                var emailID = $('#email');
-                var messageID = $('#message');
-                //element value
-                var first_name = $('#first_name').val();
-                var last_name = $('#last_name').val();
-                var subject = $('#subject').val();
-                var email = $('#email').val();
-                var message = $('#message').val();
-    
-                if (!first_name) {
-                    first_nameID.removeClass('error');
-                    first_nameID.addClass('error').attr('placeholder', 'Please Enter First Name');
-                 }else{
-                    first_nameID.removeClass('error');
-                 }
-               
-                if (!last_name) {
-                    last_nameID.removeClass('error');
-                    last_nameID.addClass('error').attr('placeholder', 'Please Enter Last Name');
-                 }else{
-                    last_nameID.removeClass('error');
-                 }
-               
-                if (!subject) {
-                    subjectID.removeClass('error');
-                    subjectID.addClass('error').attr('placeholder','Please Enter Subject')
-                 }else{
-                    subjectID.removeClass('error');
-                 }
-                if (!email) {
-                    emailID.removeClass('error');
-                    emailID.addClass('error').attr('placeholder','Please Enter Email')
-                 }else{
-                    emailID.removeClass('error');
-                 }
-                if (!message) {
-                    messageID.removeClass('error');
-                    messageID.addClass('error').attr('placeholder','Please Enter Your Message')
-                 }else{
-                    messageID.removeClass('error');
-                 }
-                 
-                
-                if ( email && message && last_name && subject && first_name ) {
-                     $.ajax({
-                         type: "POST",
-                         url:'contact.php',
-                         data:{
-                             'last_name': last_name,
-                             'subject': subject,
-                             'first_name': first_name,
-                             'email': email,
-                             'message': message,
-                         },
-                         success:function(data){
-                            formID.children('.email-success').remove();
-                             formID.prepend('<span class="alert alert-success email-success">' + data + '</span>');
-                             last_nameID.val('');
-                             first_nameID.val('');
-                             subjectID.val('');
-                             emailID.val('');
-                             messageID.val('');
-                             $('.email-success').fadeOut(5000);
-                         }
-                     });
-                 }else{
-                    formID.children('.email-success').remove();
-                    formID.prepend('<span class="alert alert-danger email-success">Somenthing is wrong</span>');
-                    $('.email-success').fadeOut(5000);
-                 }
-            });
+        });
+
+
+        //owl carousel activate function 
+
+        function owlCarsouelActivate(selector, nav, responsive, thumbs = false, thumbsPrerendered = false, loop = true, autoplay = true, margin = 30, dot = false) {
+            var $selector = $(selector);
+            if ($selector.length > 0) {
+                $selector.owlCarousel({
+                    loop: loop,
+                    autoplay: autoplay, //true if you want enable autoplay
+                    autoPlayTimeout: 1000,
+                    margin: margin,
+                    dots: dot,
+                    nav: nav,
+                    thumbs: thumbs,
+                    navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+                    thumbsPrerendered: thumbsPrerendered,
+                    responsive: responsive
+                });
+            }
+        }
+        /**-------------------------------
+         * Contact Js
+         * -----------------------------**/
+        $(document).on('submit', '#get_in_touch', function (e) {
+            e.preventDefault();
+            //element id
+            var formID = $('#get_in_touch');
+            var first_nameID = $('#first_name');
+            var last_nameID = $('#last_name');
+            var subjectID = $('#subject');
+            var emailID = $('#email');
+            var messageID = $('#message');
+            //element value
+            var first_name = $('#first_name').val();
+            var last_name = $('#last_name').val();
+            var subject = $('#subject').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if (!first_name) {
+                first_nameID.removeClass('error');
+                first_nameID.addClass('error').attr('placeholder', 'Please Enter First Name');
+            } else {
+                first_nameID.removeClass('error');
+            }
+
+            if (!last_name) {
+                last_nameID.removeClass('error');
+                last_nameID.addClass('error').attr('placeholder', 'Please Enter Last Name');
+            } else {
+                last_nameID.removeClass('error');
+            }
+
+            if (!subject) {
+                subjectID.removeClass('error');
+                subjectID.addClass('error').attr('placeholder', 'Please Enter Subject')
+            } else {
+                subjectID.removeClass('error');
+            }
+            if (!email) {
+                emailID.removeClass('error');
+                emailID.addClass('error').attr('placeholder', 'Please Enter Email')
+            } else {
+                emailID.removeClass('error');
+            }
+            if (!message) {
+                messageID.removeClass('error');
+                messageID.addClass('error').attr('placeholder', 'Please Enter Your Message')
+            } else {
+                messageID.removeClass('error');
+            }
+
+
+            if (email && message && last_name && subject && first_name) {
+                $.ajax({
+                    type: "POST",
+                    url: 'contact.php',
+                    data: {
+                        'last_name': last_name,
+                        'subject': subject,
+                        'first_name': first_name,
+                        'email': email,
+                        'message': message,
+                    },
+                    success: function (data) {
+                        formID.children('.email-success').remove();
+                        formID.prepend('<span class="alert alert-success email-success">' + data + '</span>');
+                        last_nameID.val('');
+                        first_nameID.val('');
+                        subjectID.val('');
+                        emailID.val('');
+                        messageID.val('');
+                        $('.email-success').fadeOut(5000);
+                    }
+                });
+            } else {
+                formID.children('.email-success').remove();
+                formID.prepend('<span class="alert alert-danger email-success">Somenthing is wrong</span>');
+                $('.email-success').fadeOut(5000);
+            }
+        });
 
     });
     //define variable for store last scrolltop
     var lastScrollTop = '';
     $(window).on('scroll', function () {
         //back to top show/hide
-       var ScrollTop = $('.back-to-top');
-       if ($(window).scrollTop() > 1000) {
-           ScrollTop.fadeIn(1000);
-       } else {
-           ScrollTop.fadeOut(1000);
-       }
-       /*--------------------------
-        sticky menu activation
-       -------------------------*/
+        var ScrollTop = $('.back-to-top');
+        if ($(window).scrollTop() > 1000) {
+            ScrollTop.fadeIn(1000);
+        } else {
+            ScrollTop.fadeOut(1000);
+        }
+        /*--------------------------
+         sticky menu activation
+        -------------------------*/
         var st = $(this).scrollTop();
         var mainMenuTop = $('.navbar-area');
-        if ($(window).scrollTop() > 1000) {
+        if ($(window).scrollTop() > 600) {
             if (st > lastScrollTop) {
                 // hide sticky menu on scrolldown 
                 mainMenuTop.removeClass('nav-fixed');
-                
+
             } else {
                 // active sticky menu on scrollup 
                 mainMenuTop.addClass('nav-fixed');
@@ -451,10 +451,10 @@
             mainMenuTop.removeClass('nav-fixed ');
         }
         lastScrollTop = st;
-       
+
     });
-           
-    $(window).on('load',function(){
+
+    $(window).on('load', function () {
         /*-----------------
             preloader
         ------------------*/
@@ -467,4 +467,4 @@
         backtoTop.fadeOut(100);
     });
 
-}(jQuery));	
+}(jQuery));
