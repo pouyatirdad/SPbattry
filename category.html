@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> بیگ انیا | قالب فروشگاهی چند منظوره HTML </title>
+    <title> فروشگاه </title>
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- bootstrap -->
@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 
 <body>
@@ -100,10 +103,10 @@
                 <ul class="navbar-nav">
                     <!-- navbar- nav -->
 
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="index.html">خانه</a>
                     </li>
-                    <li class="nav-item dropdown mega-menu">
+                    <li class="nav-item dropdown mega-menu active">
                         <!-- mega menu start -->
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">صفحات</a>
                         <div class="mega-menu-wrapper">
@@ -196,7 +199,7 @@
                     <li class="search" id="search"><i class="fas fa-search"></i> </li>
                     <li class="right-menu"> <a class="fas fa-user usericon" href="login.html"></a> </li>
                     <li class="cart" id="cart"><i class="fas fa-shopping-basket"></i>
-                        <span class="badge">12</span>
+                        <span class="badge">0</span>
                     </li>
                 </ul>
             </div>
@@ -216,12 +219,12 @@
                         <!-- breadcrumb inner -->
                         <div class="left-content-area">
                             <!-- left content area -->
-                            <h1 class="title">دسته بندی</h1>
+                            <h1 class="title">فروشگاه</h1>
                         </div><!-- //. left content area -->
                         <div class="right-content-area">
                             <ul>
                                 <li><a href="index.html">خانه</a></li>
-                                <li>دسته بندی</li>
+                                <li>فروشگاه</li>
                             </ul>
                         </div>
                     </div><!-- //. breadcrumb inner -->
@@ -313,7 +316,7 @@
                         <img src="assets/img/recent-review/03.jpg" alt="recent review">
                     </div>
                     <div class="content">
-                        <h4 class="title">تی شرت سیاه برک</h4>
+                        <h4 class="title">باتری ماشین</h4>
                         <ul>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -340,7 +343,7 @@
                         <img src="assets/img/recent-review/04.jpg" alt="recent review">
                     </div>
                     <div class="content">
-                        <h4 class="title">تی شرت سیاه برک</h4>
+                        <h4 class="title">باتری ماشین</h4>
                         <ul>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -367,7 +370,7 @@
                         <img src="assets/img/recent-review/05.jpg" alt="recent review">
                     </div>
                     <div class="content">
-                        <h4 class="title">تی شرت سیاه برک</h4>
+                        <h4 class="title">باتری ماشین</h4>
                         <ul>
                             <li>
                                 <i class="fas fa-star"></i>
@@ -392,12 +395,13 @@
         </div><!-- //. bottom content -->
     </div>
     <!-- slide sidebar area end -->
+
     <!-- cart sidebar area start -->
-    <div class="cart-sidebar-area" id="cart-sidebar-area">
+    <div class="cart-sidebar-area home-3" id="cart-sidebar-area">
         <div class="top-content">
             <!-- top content -->
             <a href="#" class="logo">
-                <img src="assets/img/logo-white.png" alt="logo">
+                <h3 class="text-white">آقای باتری</h3>
             </a>
             <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
         </div><!-- //. top content -->
@@ -406,186 +410,14 @@
             <div class="cart-products">
                 <!-- cart product -->
                 <h4 class="title">سبد خرید</h4>
-                <div class="single-product-item">
-                    <!-- single product item -->
-                    <div class="thumb">
-                        <img src="assets/img/recent-review/01.jpg" alt="recent review">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">کفش تیره</h4>
-                        <div class="price"><span class="pprice">350.00 تومان</span> <del class="dprice">500.00
-                                تومان</del></div>
-                        <a href="#" class="remove-cart">حذف</a>
-                    </div>
-                </div><!-- //. single product item -->
-                <div class="single-product-item">
-                    <!-- single product item -->
-                    <div class="thumb">
-                        <img src="assets/img/recent-review/02.jpg" alt="recent review">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">میلو هوروبرد</h4>
-                        <div class="price"><span class="pprice">350.00 تومان</span> <del class="dprice">500.00
-                                تومان</del></div>
-                        <a href="#" class="remove-cart">حذف</a>
-                    </div>
-                </div><!-- //. single product item -->
-                <div class="single-product-item">
-                    <!-- single product item -->
-                    <div class="thumb">
-                        <img src="assets/img/recent-review/03.jpg" alt="recent review">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">تی شرت سیاه برک</h4>
-                        <div class="price"><span class="pprice">350.00 تومان</span> <del class="dprice">500.00
-                                تومان</del></div>
-                        <a href="#" class="remove-cart">حذف</a>
-                    </div>
-                </div>
-                <div class="single-product-item">
-                    <!-- single product item -->
-                    <div class="thumb">
-                        <img src="assets/img/recent-review/04.jpg" alt="recent review">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">تی شرت سیاه برک</h4>
-                        <div class="price"><span class="pprice">350.00 تومان</span> <del class="dprice">500.00
-                                تومان</del></div>
-                        <a href="#" class="remove-cart">حذف</a>
-                    </div>
-                </div><!-- //. single product item -->
-                <div class="single-product-item">
-                    <!-- single product item -->
-                    <div class="thumb">
-                        <img src="assets/img/recent-review/05.jpg" alt="recent review">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">تی شرت سیاه برک</h4>
-                        <div class="price"><span class="pprice">350.00 تومان</span> <del class="dprice">500.00
-                                تومان</del></div>
-                        <a href="#" class="remove-cart">حذف</a>
-                    </div>
-                </div>
+                <h4 class="text-white">چیزی وجود ندارد</h4>
                 <div class="btn-wrapper">
-                    <a href="checkout.html" class="boxed-btn">بررسی و پرداخت</a>
+                    <a href="cart.html" class="boxed-btn">بررسی و پرداخت</a>
                 </div>
             </div> <!-- //. cart product -->
         </div><!-- //. bottom content -->
     </div>
     <!-- cart sidebar area end -->
-    <!-- category block area start -->
-    <div class="category-block-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <a href="#">
-                        <div class="single-cateogy-block-item">
-                            <!-- single category block item -->
-                            <div class="icon puzzle">
-                                <i class="flaticon-puzzle"></i>
-                            </div>
-                            <div class="conent">
-                                <h4 class="title">هدیه و اسباب بازی</h4>
-                            </div>
-                        </div><!-- //. single category block item -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="#">
-                        <div class="single-cateogy-block-item">
-                            <!-- single category block item -->
-                            <div class="icon laptop">
-                                <i class="flaticon-laptop-1"></i>
-                            </div>
-                            <div class="conent">
-                                <h4 class="title">لوزام الکترونیکی</h4>
-                            </div>
-                        </div><!-- //. single category block item -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="#">
-                        <div class="single-cateogy-block-item">
-                            <!-- single category block item -->
-                            <div class="icon">
-                                <i class="flaticon-shop"></i>
-                            </div>
-                            <div class="conent">
-                                <h4 class="title">کیف و چرم</h4>
-                            </div>
-                        </div><!-- //. single category block item -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="#">
-                        <div class="single-cateogy-block-item">
-                            <!-- single category block item -->
-                            <div class="icon">
-                                <i class="flaticon-shoe"></i>
-                            </div>
-                            <div class="conent">
-                                <h4 class="title">کفش مجلسی</h4>
-                            </div>
-                        </div><!-- //. single category block item -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="#">
-                        <div class="single-cateogy-block-item">
-                            <!-- single category block item -->
-                            <div class="icon bathtub">
-                                <i class="flaticon-bathtub"></i>
-                            </div>
-                            <div class="conent">
-                                <h4 class="title">محصولات بهداشتی</h4>
-                            </div>
-                        </div><!-- //. single category block item -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="#">
-                        <div class="single-cateogy-block-item">
-                            <!-- single category block item -->
-                            <div class="icon">
-                                <i class="flaticon-scissors"></i>
-                            </div>
-                            <div class="conent">
-                                <h4 class="title">زیبایی</h4>
-                            </div>
-                        </div><!-- //. single category block item -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="#">
-                        <div class="single-cateogy-block-item">
-                            <!-- single category block item -->
-                            <div class="icon first-aid">
-                                <i class="flaticon-first-aid-kit"></i>
-                            </div>
-                            <div class="conent">
-                                <h4 class="title">دارویی</h4>
-                            </div>
-                        </div><!-- //. single category block item -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="#">
-                        <div class="single-cateogy-block-item">
-                            <!-- single category block item -->
-                            <div class="icon watermelon">
-                                <i class="flaticon-watermelon"></i>
-                            </div>
-                            <div class="conent">
-                                <h4 class="title">ارگانیک</h4>
-                            </div>
-                        </div><!-- //. single category block item -->
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- category block area end -->
-
 
     <!-- category content area start -->
     <div class="category-content-area">
@@ -596,49 +428,94 @@
                         <!-- category sidebar -->
                         <div class="category-filter-widget">
                             <!-- category-filter-widget -->
-                            <h4 class="title">فیلتر بر اساس <span class="right">+</span></h4>
-                            <ul class="cat-list">
-                                <li><a href="#">برند <span class="right">+</span></a></li>
-                                <li><a href="#">مدل <span class="right">+</span></a></li>
-                                <li><a href="#">جزئیات <span class="right">+</span></a></li>
-                                <li><a href="#">کد محصول <span class="right">+</span></a></li>
-                                <li><a href="#">محصول حرفه ای <span class="right">+</span></a></li>
-                                <li><a href="#">نوع محصول <span class="right">+</span></a></li>
-                                <li><a href="#">قیمت <span class="right">+</span></a></li>
-                                <li><a href="#">دیگر <span class="right">+</span></a></li>
-                                <li><a href="#">جنس <span class="right">+</span></a></li>
-                            </ul>
+                            <h4 class="title">فیلتر بر اساس</h4>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            ولتاژ
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <a class="liitem" href="#">220 ولت</a>
+                                                </li>
+                                                <li>
+                                                    <a class="liitem" href="#">230 ویلت</a>
+                                                </li>
+
+                                                <li>
+                                                    <a class="liitem" href="#">130 ویلت</a>
+                                                </li>
+
+                                                <li>
+                                                    <a class="liitem" href="#">120 ویلت</a>
+                                                </li>
+
+                                                <li>
+                                                    <a class="liitem" href="#">180 ویلت</a>
+                                                </li>
+
+                                                <li>
+                                                    <a class="liitem" href="#">170 ویلت</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            برند
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <a class="liitem" href="#">صبا باتری</a>
+                                                </li>
+                                                <li>
+                                                    <a class="liitem" href="#">سپاهان باتری</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            مدل خودرو
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>
+                                                    <a class="liitem" href="#">ایرانی</a>
+                                                </li>
+                                                <li>
+                                                    <a class="liitem" href="#">کره ای</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div><!-- //.category-filter-widget -->
                     </div><!-- //. category sidebar -->
-                    <div class="category-compare">
-                        <h4 class="title">مقایسه (03)</h4>
-                        <ul class="compare-list">
-                            <li>
-                                <div class="single-compare-item">
-                                    <!-- single compare item -->
-                                    <h4 class="title">هسته اینتل کابای دریاچه i3 7100 3.90GHZ 3MB.</h4>
-                                    <div class="close-btn">X</div>
-                                </div><!-- //..single compare item -->
-                            </li>
-                            <li>
-                                <div class="single-compare-item">
-                                    <!-- single compare item -->
-                                    <h4 class="title">هسته اینتل کابای دریاچه i3 7100 3.90GHZ 3MB.</h4>
-                                    <div class="close-btn">X</div>
-                                </div><!-- //..single compare item -->
-                            </li>
-                            <li>
-                                <div class="single-compare-item">
-                                    <!-- single compare item -->
-                                    <h4 class="title">هسته اینتل کابای دریاچه i3 7100 3.90GHZ 3MB.</h4>
-                                    <div class="close-btn">X</div>
-                                </div><!-- //..single compare item -->
-                            </li>
-                        </ul>
-                        <div class="btn-wrapper">
-                            <a href="#" class="boxed-btn">مقایسه</a>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="col-lg-9">
                     <div class="right-content-area">
@@ -646,7 +523,7 @@
                         <div class="top-content">
                             <!-- top content -->
                             <div class="left-conent">
-                                <span class="cat">پارچه</span>
+                                <span class="cat">باتری ماشین</span>
                             </div>
                             <div class="right-content">
                                 <ul>
@@ -674,12 +551,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="grid icon active">
-                                        <i class="fas fa-th-large"></i>
-                                    </li>
-                                    <li class="grid icon">
-                                        <i class="fas fa-th-list"></i>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div><!-- //. top content -->
@@ -690,17 +562,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/01.jpg" alt="new collcetion image">
+                                            <img src="pic/b23.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">کفش</span>
-                                            <a href="#">
-                                                <h4 class="title">کفش تیره</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">53.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">53.00 تومان</span> <del
                                                     class="dprice">95.00 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -709,17 +580,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/02.jpg" alt="new collcetion image">
+                                            <img src="pic/b22.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">کفش</span>
-                                            <a href="#">
-                                                <h4 class="title">هوله</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">35.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">35.00 تومان</span> <del
                                                     class="dprice">50.00 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -728,17 +598,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/03.jpg" alt="new collcetion image">
+                                            <img src="pic/b3.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">ورزشی</span>
-                                            <a href="#">
-                                                <h4 class="title">کفش پیاده روی</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">23.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">23.00 تومان</span> <del
                                                     class="dprice">35.00 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -747,17 +616,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/04.jpg" alt="new collcetion image">
+                                            <img src="pic/b4.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">دوچرخه</span>
-                                            <a href="#">
-                                                <h4 class="title">معمولی دوچرخه</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">52.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">52.00 تومان</span> <del
                                                     class="dprice">95.00 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -766,17 +634,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/05.jpg" alt="new collcetion image">
+                                            <img src="pic/b5.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">موتور</span>
-                                            <a href="#">
-                                                <h4 class="title">موتور برقی</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">503.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">503.00 تومان</span> <del
                                                     class="dprice">905.00 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -785,17 +652,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/06.jpg" alt="new collcetion image">
+                                            <img src="pic/b6.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">کلاه</span>
-                                            <a href="#">
-                                                <h4 class="title">کلاه قرمزی</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">35.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">35.00 تومان</span> <del
                                                     class="dprice">95.00 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -804,17 +670,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/07.jpg" alt="new collcetion image">
+                                            <img src="pic/b7.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">کفش</span>
-                                            <a href="#">
-                                                <h4 class="title">معمولی دوچرخه</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">25.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">25.00 تومان</span> <del
                                                     class="dprice">85.00 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -823,17 +688,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/08.jpg" alt="new collcetion image">
+                                            <img src="pic/b8.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">کفش تیره</span>
-                                            <a href="#">
-                                                <h4 class="title">هوله</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">53.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">53.00 تومان</span> <del
                                                     class="dprice">95.00 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -842,17 +706,16 @@
                                     <div class="single-new-collection-item">
                                         <!-- single new collections -->
                                         <div class="thumb">
-                                            <img src="assets/img/new-collections/01.jpg" alt="new collcetion image">
+                                            <img src="pic/b9.jpg" alt="new collcetion image">
                                             <div class="hover">
                                                 <a href="#" class="addtocart">افزودن به سبد</a>
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <span class="category">کفش</span>
-                                            <a href="#">
-                                                <h4 class="title">کفش تیره</h4>
+                                            <a href="product-details.html">
+                                                <h4 class="title">باتری ماشین</h4>
                                             </a>
-                                            <div class="price"><span class="sprice">553.00 تومان</span> <del
+                                            <div class="price mt-3"><span class="sprice">553.00 تومان</span> <del
                                                     class="dprice">955.0 تومان</del></div>
                                         </div>
                                     </div><!-- //. single new collections  -->
@@ -866,14 +729,15 @@
     </div>
     <!-- category content area end -->
 
+
     <!-- our story area start -->
     <section class="our-story-area gray-bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title">
-                        <span class="subtitle rubik">پست های اخیر</span>
-                        <h2 class="title rubik">داستانی درباره ما</h2>
+                        <span class="subtitle rubik">پست های اخیر وبلاگ</span>
+                        <h2 class="title rubik">وبلاگ ما</h2>
                     </div>
                 </div>
             </div>
@@ -882,15 +746,16 @@
                     <div class="single-our-story-item">
                         <!-- single our story item -->
                         <div class="thumb">
-                            <img src="assets/img/our-story/01.jpg" alt="our story">
+                            <img src="pic/blog (4).jpg" alt="our story">
                         </div>
                         <div class="conent">
                             <span class="time">1398 اردیبهشت</span>
-                            <a href="#">
-                                <h4 class="title">بهترین باشید در سال جدید.</h4>
+                            <a href="blog.html">
+                                <h4 class="title">طول مدت باتری ماشین</h4>
                             </a>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. ....</p>
+                                است .لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. .</p>
                         </div>
                     </div><!-- //.single our story item -->
                 </div>
@@ -898,15 +763,16 @@
                     <div class="single-our-story-item">
                         <!-- single our story item -->
                         <div class="thumb">
-                            <img src="assets/img/our-story/02.jpg" alt="our story">
+                            <img src="pic/blog (2).jpg" alt="our story">
                         </div>
                         <div class="conent">
                             <span class="time">1398 اردیبهشت</span>
-                            <a href="#">
-                                <h4 class="title">بهترین باشید در سال جدید.</h4>
+                            <a href="blog.html">
+                                <h4 class="title">خرابی باتری ماشین</h4>
                             </a>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. ....</p>
+                                است .لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. .</p>
                         </div>
                     </div><!-- //.single our story item -->
                 </div>
@@ -914,15 +780,16 @@
                     <div class="single-our-story-item">
                         <!-- single our story item -->
                         <div class="thumb">
-                            <img src="assets/img/our-story/03.jpg" alt="our story">
+                            <img src="pic/blog (3).jpg" alt="our story">
                         </div>
                         <div class="conent">
                             <span class="time">1398 اردیبهشت</span>
-                            <a href="#">
-                                <h4 class="title">بهترین باشید در سال جدید.</h4>
+                            <a href="blog.html">
+                                <h4 class="title">کیفیت باتری ماشین</h4>
                             </a>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. ....</p>
+                                است .لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                گرافیک است. .</p>
                         </div>
                     </div><!-- //.single our story item -->
                 </div>
@@ -952,8 +819,9 @@
     </div>
     <!-- preloader area end -->
 
+
     <!-- footer area one start -->
-    <footer class="footer-arae-one">
+    <footer class="footer-arae-one home-3">
         <div class="footer-top-one blue-bg">
             <!-- footer top one-->
             <div class="container">
@@ -961,8 +829,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-widget about">
                             <div class="widget-body">
-                                <a href="index.html" class="footer-logo">
-                                    <img src="assets/img/logo.png" alt="footer logo">
+                                <a href="index-3.html" class="footer-logo">
+                                    <h3 class="text-white">آقای باتری</h3>
                                 </a>
                                 <ul class="contact-info-list">
                                     <li>
@@ -971,8 +839,9 @@
                                                 <i class="fas fa-map-marker-alt"></i>
                                             </div>
                                             <div class="content">
-                                                <span class="details">ایران، ارومیه، ساختمان حافظ، فروشگاه بیگ
-                                                    انیا</span>
+                                                <span class="details">
+                                                    ایران ، تهران
+                                                </span>
                                             </div>
                                         </div>
                                     </li>
@@ -982,8 +851,8 @@
                                                 <i class="fas fa-envelope"></i>
                                             </div>
                                             <div class="content">
-                                                <span class="details">youremail@yourdomain.com</span>
-                                                <span class="details">example@yourdomain.com</span>
+                                                <span class="details">mrbattry@gmail.com</span>
+
                                             </div>
                                         </div>
                                     </li>
@@ -993,8 +862,8 @@
                                                 <i class="fas fa-phone"></i>
                                             </div>
                                             <div class="content">
-                                                <span class="details">+88 (0) 101 0000 000</span>
-                                                <span class="details">+99 (989) 101 0000 000</span>
+                                                <span class="details">021 66 64 666</span>
+
                                             </div>
                                         </div>
                                     </li>
@@ -1056,48 +925,12 @@
                 </div>
             </div>
         </div><!-- //.footer top one -->
-        <div class="copyright-area blue-bg">
+        <div class="copyright-area blue-bg pb-3">
             <!-- copyright area -->
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-inner">
-                            <!-- copyright inner -->
-                            <div class="left-content-area">
-                                <span class="copyright-text">کپی رایت@TN_Plugin - 2018 _ فارسی و راست چین فارسی توسط
-                                    طاهر نصیری</span>
-                            </div>
-                            <div class="right-content-area">
-                                <ul class="payment-logo">
-                                    <li>
-                                        <img src="assets/img/payment-logo/01.png" alt="payment logo">
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/payment-logo/02.png" alt="payment logo">
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/payment-logo/03.png" alt="payment logo">
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/payment-logo/04.png" alt="payment logo">
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/payment-logo/05.png" alt="payment logo">
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/payment-logo/06.png" alt="payment logo">
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/payment-logo/07.png" alt="payment logo">
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/payment-logo/08.png" alt="payment logo">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div><!-- //. copyright inner -->
-                    </div>
-                </div>
+                <h5 class="text-white text-center">
+                    طراحی شده توسط <a style="color: #FF8641;" href="https://www.spad.co">اسپاد</a> تمامی حقوق محفوظ است
+                </h5>
             </div>
         </div><!-- //. copyright area -->
     </footer>
@@ -1135,6 +968,18 @@
     <script src="assets/js/select2.min.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
 </body>
 
 
