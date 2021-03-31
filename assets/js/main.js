@@ -468,3 +468,110 @@
     });
 
 }(jQuery));
+
+
+// buy battry in shop
+
+var ShopBattryNum = 0;
+
+var shopNum = document.getElementById('ShopNum');
+
+var ShopPro1 = document.getElementById('shopProducts1');
+
+var ShopPro2 = document.getElementById('shopProducts2');
+
+var ShopPro3 = document.getElementById('shopProducts3');
+
+function buyingInShop() {
+
+
+    ShopBattryNum += 1;
+
+
+    shopNum.innerHTML = ShopBattryNum
+
+
+    if (ShopBattryNum === 1) {
+
+        ShopPro1.style.display = "block";
+
+    } else if (ShopBattryNum === 2) {
+
+        ShopPro2.style.display = "block";
+
+    }
+    else if (ShopBattryNum === 3) {
+
+        ShopPro3.style.display = "block";
+
+    }
+
+}
+
+function deleteINShop() {
+
+    if (ShopBattryNum > 0) {
+        ShopBattryNum -= 1;
+    } else {
+        ShopBattryNum = 0;
+    }
+
+    shopNum.innerHTML = ShopBattryNum
+
+}
+
+// cart
+
+var CartNumbuy = 3
+
+var cartProducts1 = document.getElementById('cartProducts1');
+
+var cartProducts2 = document.getElementById('cartProducts2');
+
+var cartProducts3 = document.getElementById('cartProducts3');
+
+///////////////////
+
+var CartListPro1 = document.getElementById('CartListPro1');
+
+var CartListPro2 = document.getElementById('CartListPro2');
+
+var CartListPro3 = document.getElementById('CartListPro3');
+
+var Cartnum = document.getElementById('Cartnum');
+
+function deleteInCart() {
+
+
+    if (CartNumbuy === 3) {
+
+        cartProducts1.style.display = "none"
+
+        CartListPro1.style.display = "none"
+
+    } else if (CartNumbuy === 2) {
+
+        cartProducts2.style.display = "none"
+
+        CartListPro2.style.display = "none"
+
+    } else if (CartNumbuy === 1) {
+
+        cartProducts3.style.display = "none"
+
+        CartListPro3.style.display = "none"
+    }
+
+    if (CartNumbuy > 0) {
+
+        CartNumbuy -= 1;
+
+    } else {
+
+        CartNumbuy = 0;
+
+    }
+
+    Cartnum.innerHTML = CartNumbuy;
+
+}

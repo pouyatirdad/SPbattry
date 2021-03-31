@@ -10470,3 +10470,29 @@ ul {
 a {
   text-decoration: none !important;
 }
+
+.deleteicon {
+  display: inline-block;
+  font-size: 10px;
+  color: #fff;
+  background-color: #dc3545;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.deletetimes {
+  color: #ff3d3d;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}

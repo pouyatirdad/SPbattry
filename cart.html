@@ -197,7 +197,7 @@
                     <li class="search" id="search"><i class="fas fa-search"></i> </li>
                     <li class="right-menu"> <a class="fas fa-user usericon" href="login.html"></a> </li>
                     <li class="cart" id="cart"><i class="fas fa-shopping-basket"></i>
-                        <span class="badge">0</span>
+                        <span class="badge" id="Cartnum">3</span>
                     </li>
                 </ul>
             </div>
@@ -408,7 +408,49 @@
             <div class="cart-products">
                 <!-- cart product -->
                 <h4 class="title">سبد خرید</h4>
-                <h4 class="text-white">چیزی وجود ندارد</h4>
+
+                <div class="single-product-item" id="cartProducts1">
+                    <!-- single product item -->
+                    <div class="thumb">
+                        <img src="pic/b1.jpg" width="80px" height="80px" alt="recent review">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">باتری ماشین</h4>
+                        <div class="price"><span class="pprice text-white">350.00 تومان</span> <del class="dprice"
+                                style="color: #c25f5f;">500.00
+                                تومان</del></div>
+                        <a href="#" class="deleteicon" onclick=" deleteInCart() ">حذف</a>
+                    </div>
+                </div><!-- //. single product item -->
+
+                <div class="single-product-item" id="cartProducts2">
+                    <!-- single product item -->
+                    <div class="thumb">
+                        <img src="pic/b2.jpg" width="80px" height="80px" alt="recent review">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">باتری ماشین</h4>
+                        <div class="price"><span class="pprice text-white">350.00 تومان</span> <del class="dprice"
+                                style="color: #c25f5f;">500.00
+                                تومان</del></div>
+                        <a href="#" class="deleteicon" onclick=" deleteInCart() ">حذف</a>
+                    </div>
+                </div><!-- //. single product item -->
+
+                <div class="single-product-item" id="cartProducts3">
+                    <!-- single product item -->
+                    <div class="thumb">
+                        <img src="pic/b3.jpg" width="80px" height="80px" alt="recent review">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">باتری ماشین</h4>
+                        <div class="price"><span class="pprice text-white">350.00 تومان</span> <del class="dprice"
+                                style="color: #c25f5f;">500.00
+                                تومان</del></div>
+                        <a href="#" class="deleteicon" onclick=" deleteInCart() ">حذف</a>
+                    </div>
+                </div><!-- //. single product item -->
+
                 <div class="btn-wrapper">
                     <a href="cart.html" class="boxed-btn">بررسی و پرداخت</a>
                 </div>
@@ -437,15 +479,77 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr id="CartListPro1">
                                         <td>
                                             <div class="product-details">
                                                 <!-- product details -->
-                                                <div class="close-btn cart-remove-item">
-                                                    <i class="fas fa-times"></i>
+                                                <div class="deletetimes">
+                                                    <i onclick=" deleteInCart() " class="fas fa-times"></i>
                                                 </div>
                                                 <div class="thumb">
-                                                    <img src="pic/b5.jpg" width="160px" height="160px" alt="cart image">
+                                                    <img src="pic/b1.jpg" width="160px" height="160px" alt="cart image">
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="title">باتری ماشین</h4>
+                                                </div>
+                                            </div><!-- //. product detials -->
+                                        </td>
+                                        <td>
+                                            <div class="price">3,899.00 تومان</div>
+                                        </td>
+                                        <td>
+                                            <div class="qty">
+                                                <ul>
+                                                    <li><span class="qtminus"><i class="fas fa-minus"></i></span></li>
+                                                    <li><span class="qttotal">1</span></li>
+                                                    <li><span class="qtplus"><i class="fas fa-plus"></i></span></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="price">3,899.00 تومان</div>
+                                        </td>
+                                    </tr>
+                                    <tr id="CartListPro2">
+                                        <td>
+                                            <div class="product-details">
+                                                <!-- product details -->
+                                                <div class="deletetimes">
+                                                    <i onclick=" deleteInCart() " class="fas fa-times"></i>
+                                                </div>
+                                                <div class="thumb">
+                                                    <img src="pic/b2.jpg" width="160px" height="160px" alt="cart image">
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="title">باتری ماشین</h4>
+                                                </div>
+                                            </div><!-- //. product detials -->
+                                        </td>
+                                        <td>
+                                            <div class="price">3,899.00 تومان</div>
+                                        </td>
+                                        <td>
+                                            <div class="qty">
+                                                <ul>
+                                                    <li><span class="qtminus"><i class="fas fa-minus"></i></span></li>
+                                                    <li><span class="qttotal">1</span></li>
+                                                    <li><span class="qtplus"><i class="fas fa-plus"></i></span></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="price">3,899.00 تومان</div>
+                                        </td>
+                                    </tr>
+                                    <tr id="CartListPro3">
+                                        <td>
+                                            <div class="product-details">
+                                                <!-- product details -->
+                                                <div class="deletetimes">
+                                                    <i onclick=" deleteInCart() " class="fas fa-times"></i>
+                                                </div>
+                                                <div class="thumb">
+                                                    <img src="pic/b3.jpg" width="160px" height="160px" alt="cart image">
                                                 </div>
                                                 <div class="content">
                                                     <h4 class="title">باتری ماشین</h4>
@@ -630,7 +734,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-widget about">
                             <div class="widget-body">
-                                <a href="index-3.html" class="footer-logo">
+                                <a href="index.html" class="footer-logo">
                                     <h3 class="text-white">آقای باتری</h3>
                                 </a>
                                 <ul class="contact-info-list">
