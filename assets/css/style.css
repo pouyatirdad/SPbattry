@@ -3301,8 +3301,8 @@ ul {
 
 .single-product-item-two {
   background-color: white;
-  -webkit-box-shadow: 0px 4px 30px 0px rgba(226, 226, 226, 0.3);
-  box-shadow: 0px 4px 30px 0px rgba(226, 226, 226, 0.3);
+  -webkit-box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
+  box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -3764,6 +3764,8 @@ ul {
   position: relative;
   min-height: 130px;
   margin-bottom: 20px;
+
+  box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
 }
 .single-rated-box-two:hover .content .title {
   color: #ff8641;
@@ -4733,6 +4735,8 @@ ul {
 .our-story-area .single-our-story-item {
   text-align: center;
   font-family: "IRANSans";
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
 }
 .our-story-area .single-our-story-item:hover .thumb img {
   -webkit-filter: grayscale(100%);
@@ -6513,7 +6517,7 @@ ul {
   .boxed-btn {
   padding: 0 30px;
   cursor: pointer;
-  width: auto;
+  width: 100%;
   margin: 0 10px;
   background-color: #ff8641;
   border: 2px solid transparent;
@@ -8031,6 +8035,8 @@ ul {
   text-align: center;
   font-family: "IRANSans";
   margin-bottom: 22px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
 }
 .blog-page-content-area .single-our-story-item:hover .thumb img {
   -webkit-filter: grayscale(100%);
