@@ -3303,6 +3303,7 @@ ul {
   background-color: white;
   -webkit-box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
   box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
+  border-radius: 12px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -3763,8 +3764,8 @@ ul {
 .single-rated-box-two {
   position: relative;
   min-height: 130px;
+  border-radius: 12px;
   margin-bottom: 20px;
-
   box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
 }
 .single-rated-box-two:hover .content .title {
@@ -4736,6 +4737,7 @@ ul {
   text-align: center;
   font-family: "IRANSans";
   padding-bottom: 10px;
+  border-radius: 12px;
   box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
 }
 .our-story-area .single-our-story-item:hover .thumb img {
@@ -5167,12 +5169,16 @@ ul {
 .widget-area.latest-post .single-latest-post {
   margin-bottom: 18px;
   margin-top: 25px;
+  background-color: #ffd98f;
+  border-radius: 12px;
 }
 .widget-area.latest-post .single-latest-post:last-child {
   margin-bottom: 0;
 }
 .widget-area.latest-post .single-latest-post .media .media-body {
+  padding-top: 14px;
   padding-left: 5px;
+  padding-right: 10px;
 }
 .widget-area.latest-post .single-latest-post .media .media-body h5 {
   font-size: 16px;
@@ -8035,6 +8041,7 @@ ul {
   text-align: center;
   font-family: "IRANSans";
   margin-bottom: 22px;
+  border-radius: 12px;
   padding-bottom: 10px;
   box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
 }
