@@ -949,7 +949,7 @@ input:checked + .slider:before {
   display: inline-block;
 }
 .breadcrumb-area .left-content-area .title {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
   font-weight: 400;
   color: #fff;
@@ -3008,7 +3008,6 @@ ul {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
@@ -3301,8 +3300,8 @@ ul {
 
 .single-product-item-two {
   background-color: white;
-  -webkit-box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
-  box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
+  -webkit-box-shadow: 1px 4px 4px 1px rgba(85, 78, 78, 0.418);
+  box-shadow: 1px 4px 4px 1px rgba(85, 78, 78, 0.418);
   border-radius: 12px;
   text-align: center;
   margin-bottom: 30px;
@@ -3766,7 +3765,7 @@ ul {
   min-height: 130px;
   border-radius: 12px;
   margin-bottom: 20px;
-  box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
+  box-shadow: 1px 4px 4px 1px rgba(85, 78, 78, 0.418);
 }
 .single-rated-box-two:hover .content .title {
   color: #ff8641;
@@ -4738,7 +4737,7 @@ ul {
   font-family: "IRANSans";
   padding-bottom: 10px;
   border-radius: 12px;
-  box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
+  box-shadow: 1px 4px 4px 1px rgba(85, 78, 78, 0.418);
 }
 .our-story-area .single-our-story-item:hover .thumb img {
   -webkit-filter: grayscale(100%);
@@ -5169,7 +5168,7 @@ ul {
 .widget-area.latest-post .single-latest-post {
   margin-bottom: 18px;
   margin-top: 25px;
-  background-color: #ffd98f;
+  box-shadow: 1px 3px 3px 1px rgb(85 78 78 / 42%);
   border-radius: 12px;
 }
 .widget-area.latest-post .single-latest-post:last-child {
@@ -8043,7 +8042,7 @@ ul {
   margin-bottom: 22px;
   border-radius: 12px;
   padding-bottom: 10px;
-  box-shadow: 0px 4px 30px 0px rgba(85, 78, 78, 0.418);
+  box-shadow: 1px 4px 4px 1px rgba(85, 78, 78, 0.418);
 }
 .blog-page-content-area .single-our-story-item:hover .thumb img {
   -webkit-filter: grayscale(100%);
