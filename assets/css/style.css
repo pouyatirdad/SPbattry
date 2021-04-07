@@ -1761,6 +1761,7 @@ ul {
   color: #242424;
   text-transform: capitalize;
   margin-bottom: 17px;
+  padding-bottom: 20px !important;
 }
 .navbar-area
   .navbar-collapse
@@ -5828,6 +5829,8 @@ ul {
   padding: 115px 0 120px 0;
 }
 .testimonial-area .testimonial-carousel .sinlge-testimonial-member {
+  background-color: white;
+  border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding: 40px 30px 35px 30px;
   text-align: center;
