@@ -2971,11 +2971,17 @@ ul {
   border: 1px solid #806f5149;
   padding: 9px;
   border-radius: 16px;
+  position: relative;
+  top: 0;
+  transition: top 0.5s ease !important;
 }
+
 .single-new-collection-item:hover {
   -webkit-box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.1);
+  top: -10px;
 }
+
 .single-new-collection-item:hover .thumb .hover {
   visibility: visible;
   opacity: 1;
@@ -3306,7 +3312,15 @@ ul {
   border-radius: 12px;
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  transition: top 0.5s ease !important;
 }
+
+.single-product-item-two:hover {
+  top: -10px;
+}
+
 .single-product-item-two.home-6 {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -3767,7 +3781,15 @@ ul {
   border-radius: 12px;
   margin-bottom: 20px;
   box-shadow: 1px 4px 4px 1px rgba(85, 78, 78, 0.418);
+  position: relative;
+  top: 0;
+  transition: top 0.5s ease !important;
 }
+
+.single-rated-box-two:hover {
+  top: -5px;
+}
+
 .single-rated-box-two:hover .content .title {
   color: #ff8641;
 }
@@ -5972,7 +5994,7 @@ ul {
   padding: 36px 40px 35px 40px;
 }
 .category-content-area .category-sidebar .category-filter-widget .title {
-  font-size: 13px;
+  font-size: 22px;
   font-weight: 700;
   color: #ff8641;
   font-family: "IRANSans";
