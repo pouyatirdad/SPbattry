@@ -27,6 +27,41 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Demo styles -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-top {
+            height: 80%;
+            width: 100%;
+        }
+
+        .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .gallery-thumbs .swiper-slide {
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -232,51 +267,90 @@
     <div class="product-details-content-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="left-content-area">
-                        <!-- left content area -->
-                        <div class="product-details-slider" id="product-details-slider" data-slider-id="1">
-                            <div class="single-product-thumb">
-                                <img src="pic/b13.jpg" alt="product details image">
+                <div class="col-lg-6 col-sm-12 ">
+
+                    <!-- <div class="left-content-area"> -->
+
+                    <!-- Swiper -->
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="pic/b1.jpg" width="100%" alt="">
                             </div>
-                            <div class="single-product-thumb">
-                                <img src="pic/b14.jpg" alt="product details image">
+                            <div class="swiper-slide">
+                                <img src="pic/b2.jpg" width="100%" alt="">
                             </div>
-                            <div class="single-product-thumb">
-                                <img src="pic/b16.jpg" alt="product details image">
+                            <div class="swiper-slide">
+                                <img src="pic/b3.jpg" width="100%" alt="">
                             </div>
-                            <div class="single-product-thumb">
-                                <img src="pic/b17.jpg" alt="product details image">
+                            <div class="swiper-slide">
+                                <img src="pic/b4.jpg" width="100%" alt="">
                             </div>
-                            <div class="single-product-thumb">
-                                <img src="pic/b10.jpg" alt="product details image">
+                            <div class="swiper-slide">
+                                <img src="pic/b5.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b6.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b7.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b8.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b9.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b10.jpg" width="100%" alt="">
                             </div>
                         </div>
-                        <ul class="owl-thumbs product-deails-thumb d-flex justify-content-center row"
-                            data-slider-id="1">
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="pic/b1.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b2.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b3.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b4.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b5.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b6.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b7.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b8.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b9.jpg" width="100%" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="pic/b10.jpg" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
 
-                            <li class="owl-thumb-item col-3 my-1">
-                                <img src="pic/b13.jpg" width="150px" height="150px" alt="product details thumb">
-                            </li>
-                            <li class="owl-thumb-item col-3 my-1">
-                                <img src="pic/b14.jpg" width="150px" height="150px" alt="product details thumb">
-                            </li>
-                            <li class="owl-thumb-item col-3 my-1">
-                                <img src="pic/b16.jpg" width="150px" height="150px" alt="product details thumb">
-                            </li>
-                            <li class="owl-thumb-item col-3 my-1">
-                                <img src="pic/b17.jpg" width="150px" height="150px" alt="product details thumb">
-                            </li>
-                            <li class="owl-thumb-item col-3 my-1">
-                                <img src="pic/b10.jpg" width="150px" height="150px" alt="product details thumb">
-                            </li>
-                        </ul>
-                    </div><!-- //.left content area -->
+                    <!-- Swiper JS -->
+                    <!-- </div> -->
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-sm-12">
                     <div class="right-content-area">
                         <!-- right content area -->
-                        <div class="top-content">
+                        <div class="top-content mt-sm-4 mt-md-0">
                             <ul class="review">
                                 <li><i class="fas fa-star"></i></li>
                                 <li><i class="fas fa-star"></i></li>
@@ -1003,6 +1077,35 @@
     <script src="assets/js/owl.carousel2.thumbs.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            loop: true,
+            freeMode: true,
+            loopedSlides: 5, //looped slides should be the same
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            loop: true,
+            loopedSlides: 5, //looped slides should be the same
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs,
+            },
+        });
+    </script>
+
 </body>
 
 
