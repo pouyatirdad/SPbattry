@@ -5191,7 +5191,7 @@ ul {
 .widget-area.latest-post .single-latest-post {
   margin-bottom: 18px;
   margin-top: 25px;
-  box-shadow: 1px 3px 3px 1px rgb(85 78 78 / 42%);
+  box-shadow: 1px 3px 3px 1px rgb(85 78 78 / 22%);
   border-radius: 12px;
 }
 .widget-area.latest-post .single-latest-post:last-child {
@@ -10532,4 +10532,14 @@ a {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+.startopProducts {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 995px) {
+  .startopProducts {
+    margin-top: 30px !important;
+  }
 }
